@@ -1,0 +1,391 @@
+html{
+	margin: 0px;
+	padding: 0px;
+    background: #30373e;
+}
+body{
+	margin: 0px 50px;
+	padding: 0px;
+	font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #333;
+    background-color: #fff;
+    word-break: break-word;
+    word-wrap: break-word;
+    letter-spacing: .4px;
+    min-height: 100%;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+	color: #333;
+	text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+	position: relative;
+	overflow: auto;
+	clear: both;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	}
+	.header_navigation{
+		display: inline-block;
+		height: 50px;
+		vertical-align: bottom;
+	    padding: 0px 10px;
+		}
+
+		.header_logo{
+			display: inline-block;
+		    width: 200px;
+		    height: 50px;
+		    margin-right: 15px;
+		    background-image: url(images/logo.svg);
+		    background-repeat: no-repeat;
+		    background-position: center;
+			vertical-align: bottom;
+			}
+		.navItem{
+		    display: inline-block;
+		    margin: 0 8px;
+		    padding: 0 0 .2em;
+		    cursor: pointer;
+		    text-transform: uppercase;
+		    line-height: 15px;
+		    font-size: 13px;
+		    font-weight: 600;
+		    letter-spacing: .4px;
+		    border-bottom: 2px solid transparent;
+		    transition: color .15s;
+			}
+		.navItem:hover{
+		    border-bottom: 2px solid #333;
+			}
+	.header_actions{
+		display: block;
+	    margin-right: 10px;
+		}
+		.actionItem{
+		    display: inline-block;
+		    padding-top: 30px;
+		    vertical-align: top;
+		    margin: 0px 2px;
+		    cursor: pointer;
+		    text-transform: uppercase;
+		    font-size: 12px;
+			color: #fff;
+		    border-bottom: 2px solid transparent;
+		    transition: color .15s;
+			}
+			.actionItem.actionSearch{
+				font-size: 18px;
+				margin-left: 20px;
+				padding-top: 22px;
+				}
+				.actionItem.actionSearch i{
+					height: 30px;
+				    width: 30px;
+				    text-align: center;
+				    line-height: 30px;
+				    background-color: #3b444d;
+				    border-radius: 50%;
+					}
+			.actionItem i.social{
+				border-radius: 50%;
+			    height: 20px;
+			    width: 20px;
+			    text-align: center;
+			    line-height: 20px;
+				}
+			.socialFacebook i{ background-color: #2e5195; }
+			.socialTwitter i{ background-color: #1cadea; }
+			.socialInstagram i{ background-color: #5380a4; }
+			.socialPinterest i{ background-color: #c9222d; }
+			.socialYoutube i{ background-color: #fc0d1b; }
+.promo{
+	position: relative;
+	}
+	.promo:before{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		content: '';
+		width: 100%;
+		height: 400px;
+		z-index: 0;
+	    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(images/promo.jpg);
+	    background-position: center center;
+		}
+	.promo_content{
+		position: relative;
+		display: block;
+		text-align: center;
+		/*height: 400px;*/
+		}
+	.promo_title{
+		padding-top: 75px;
+		padding-bottom: 10px;
+		display: block;
+		line-height: 20px;
+	    letter-spacing: 2px;
+	    color: #FFF;
+	    font-size: 14px;
+	    font-weight: 600;
+	    text-transform: uppercase;
+		}
+	.promo_description{
+	    display: inline-block;
+	    margin-bottom: 80px;
+	    line-height: 47px;
+	    font-size: 40px;
+	    max-width: 800px;
+	    text-align: center;
+	    color: #FFF;
+	    font-weight: 700;
+		}
+	.promo_overlay{
+		margin: 0px auto;
+		width: 90%;
+		background-color: #FFF;
+		border:1px solid #F8F8F8;
+		box-shadow: 0px 4px 20px rgba(0,0,0,0.2);
+		}
+		.promo_categories{
+		    display: flex;
+		    justify-content: space-between;
+			}
+			.promo_category{
+			    flex-grow: 1;
+			    flex-basis: 0;
+				padding: 20px;
+				}
+				.promo_category:hover{
+					box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+					cursor: pointer;
+					}
+				.promo_categoryHeader{
+					width: 200px;
+					margin-left: auto;
+					margin-right: auto;
+					margin-top: -30px;
+					background-color: #3b444d;
+					color: #FFF;
+					padding: 10px 0px;
+					clip-path: polygon(100% 0, 90% 80%, 48% 100%, 10% 80%, 0 0);
+					border-radius: 5px;
+					}
+					.promo_categoryName{
+						text-transform: uppercase;
+						font-weight: 600;
+						}
+					.promo_categoryIcon{}
+				.promo_categoryImage{}
+					.promo_categoryImage img{
+						max-height: 200px;
+						max-width: 220px;
+						}
+				.promo_categoryTitle{
+					font-size: 14px;
+					font-weight: 600;
+					text-transform: uppercase;
+					margin-bottom: 20px;
+					min-height: 45px;
+				}
+				.promo_categoryLink{
+				    display: inline-block;
+				    padding: 10px 10px;
+				    background-color: #fd9827;
+				    font-weight: 600;
+				    font-size: 12px;
+				    color: #FFF;
+				    text-transform: uppercase;
+				    border-radius: 3px;
+					}
+					.promo_categoryLink:hover{
+						background-color: #3b444d;
+						}
+
+.blog{
+	width: 90%;
+	margin: 50px auto;
+	}
+	.blog_author{
+		margin: 20px auto;
+		overflow: auto;
+		clear: both;
+		}
+		.blog_authorPicture{
+			float: left;
+			}
+		.blog_authorPicture img{
+			max-width: 75px;
+			max-height: 75px;
+			}
+		.blog_authorTitle{
+			margin-top: 25px;
+			font-size: 15px;
+			font-weight: 600;
+			}
+		.blog_authorDate{
+			font-weight: 400;
+			line-height: 25px;
+			}
+
+	.blog_intro{
+		margin:20px 0px;
+		margin-left: 65px;
+		font-family: Georgia;
+		color: #444;
+		font-size: 16px;
+		border-left: 1px solid #EEE;
+		padding-left: 9px;
+		}
+	.blog_reviews{
+		}
+		.blog_review{
+			display: grid;
+			grid-template-columns: auto auto;
+			grid-gap: 0px;
+			border-top: 1px solid #CCC;
+			margin-top: 40px;
+			padding-top: 20px;
+			}
+			.blog_reviewHeadline{
+				grid-column-start: 1;
+				grid-column-end: 3;
+				font-size: 22px;
+				font-weight: 600;
+				color: #222;
+				}
+			.blog_reviewProduct{
+				grid-column-start: 1;
+				grid-column-end: 3;
+				font-size: 16px;
+				text-transform: uppercase;
+				font-weight: 600;
+				color: #666;
+			}
+			.blog_reviewImage{
+				grid-column-start: 1;
+				grid-column-end: 2;
+				}
+				.blog_reviewImage img{
+					max-width: 300px;
+					}
+			.blog_reviewText{
+				grid-column-start: 2;
+				grid-column-end: 2;
+				grid-row-start: 3;
+				grid-row-end: 99;
+				padding: 0px 20px;
+				font-family: Georgia;
+				color: #666;
+				font-size: 16px;
+			}
+			.blog_reviewSpecs{
+				grid-column-start: 1;
+				grid-column-end: 2;
+				}
+				.blog_reviewSpecs_list{
+					margin: 20px;
+					padding-bottom: 10px;
+					border-bottom: 1px solid #EEE;
+					}
+					.blog_reviewSpecs_listItem{
+						overflow: auto;
+						clear: both;
+						font-size: 16px;
+						margin-bottom: 10px;
+						}
+						.blog_reviewSpecs_listItem_label{
+							display: inline-block;
+							float: left;
+							width: 150px;
+							font-weight: 600;
+							color: #222;
+							}
+						.blog_reviewSpecs_listItem_value{
+							display: inline-block;
+							color: #888;
+							}
+			.blog_reviewProsCons{
+				grid-column-start: 1;
+				grid-column-end: 2;
+				margin: 0px 20px;
+				}
+				.blog_reviewPros_list, .blog_reviewCons_list{}
+					.blog_reviewPros_listItem, .blog_reviewCons_listItem{
+						padding: 5px 0px;
+						}
+						.blog_reviewPros_listItem i{
+							color: green;
+							margin-right: 10px;
+							}
+						.blog_reviewCons_listItem i{
+							color: red;
+							margin-right: 10px;
+							}
+
+
+
+.footer{
+	margin-top:20px;
+	padding-top: 20px;
+	margin-bottom: 0px;
+	padding-bottom: 40px;
+	background-color: #3b444d;
+	}	
+	.footer_social{
+		text-align: center;
+		font-size: 40px;
+		color: #666;
+	}
+	.footer_links{
+		display: flex;
+		justify-content: space-between;
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		}
+		.links_column{
+			margin:0px 20px;
+			}
+		.links_category{
+			font-size: 15px;
+			font-weight: 600;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			color: #AAA;
+			}
+		.links_item{
+			display: block;
+			font-size: 12px;
+			font-weight: 500;
+			margin-bottom: 5px;
+			}
+			.links_item a{
+				color: #CCC;
+				border-bottom: 1px solid transparent;
+				}
+				.links_item a:hover{
+					border-bottom: 1px solid #333;
+					}
+
+
+
+
+
+
+
+
+
+
